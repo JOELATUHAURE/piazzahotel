@@ -1,10 +1,11 @@
 import React from 'react';
-import { ChevronDown } from 'lucide-react';
-import gkatImage from '../images/piaza.jpg'; // Import the image
+import { ChevronRight, ChevronDown } from 'lucide-react';
+import gkatImage from '../images/piaza.jpg'; // Ensure the path is correct
 
 const Hero = () => {
   return (
-     <div 
+    <section id="home" className="relative h-screen">
+      <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `url(${gkatImage})`,
@@ -13,9 +14,8 @@ const Hero = () => {
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       </div>
 
-       
-      <div className="relative h-full flex items-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative h-full flex items-center justify-center text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
             Welcome to Flagship Piazza Hotel
           </h1>
@@ -39,7 +39,14 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+
+      <a
+        href="#about"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce"
+      >
+        <ChevronDown size={32} />
+      </a>
+    </section>
   );
 };
 
