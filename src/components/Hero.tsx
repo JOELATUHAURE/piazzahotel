@@ -1,22 +1,20 @@
 import React from 'react';
-import { ChevronRight } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
+import gkatImage from '../images/piaza.jpg'; // Import the image
 
 const Hero = () => {
   return (
-    <div id="home" className="relative h-screen">
-      <div className="absolute inset-0">
-        <div className="relative h-full">
-          {/* Hero Image */}
-          <img
-            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80"
-            alt="Flagship Piazza Hotel"
-            className="w-full h-full object-cover"
-          />
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black bg-opacity-50" />
-        </div>
+     <section id="home" className="relative h-screen">
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url(${piazaImage})`, // Use imported image
+        }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       </div>
-      
+
+       
       <div className="relative h-full flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
