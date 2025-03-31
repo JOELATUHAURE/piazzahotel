@@ -4,11 +4,10 @@ import gkatImage from '../images/piaza.jpg'; // Import the image
 
 const Hero = () => {
   return (
-     <section id="home" className="relative h-screen">
-      <div 
+     <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url(${piazaImage})`, // Use imported image
+          backgroundImage: `url(${gkatImage})`,
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
